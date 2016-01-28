@@ -1,6 +1,63 @@
 CHANGES
 =======
 
+0.7.4
+-----
+
+* Documentation for cluster API and resources
+* Add ISO8601 formatter as a type for properties
+* Raise NotFound exception when get a deleted stack
+* Updated from global requirements
+* download_object/get_object must have the same API
+* Map KSA exception to SDK exceptions
+* Fix URLs for CLI Reference
+* Updated from global requirements
+* Send keystoneauth a better user-agent string
+* Add network availability zone support
+* Allow resource get to carry query string
+* Rework cluster API
+* Skip test class unless a service exists
+* Add attribute 'location' to base resource
+* Add preview_stack for orchestration
+* Update Quota documentation and properties
+* Update Subnet Pools Documentation
+* Update router's functional tests to validate is_ha property
+* Updated from global requirements
+* Use assertTrue/False instead of assertEqual(T/F)
+* Remove status property from LBaaS resources
+* Add functional tests for DVR router
+* Add missing Listener resource properties
+* Better support for metadata in Compute service
+* Add image user guide
+* s/save/download/
+* Replace assertTrue(isinstance()) with assertIsInstance()
+* Replace assertEqual(None, *) with assertIsNone in tests
+* Add support for availability zone request
+* Add proxy methods for node actions (cluster)
+* Rename timestamp fields for cluster service
+* Add cluster actions to cluster proxy
+* Fix docstring of resource_id parameter in resource module
+* Fix server action resource call
+* Correct response value in resource unittests
+* Raise not found error if stack is deleted when find_stack
+* Add Receiver resource to cluster service
+* Add Subnet Pool CRUD
+* remove python 2.6 trove classifier
+* Add Quota RUD and missing properties
+* Add 'resize' action to cluster
+* Return None when getting an attr which is None when using resource.prop()
+* Add Network mtu and port_security_enabled properties
+* Support block_store types where IDs are taken
+* Remove requests from requirements
+* cluster: Use typed props instead of *_id
+* Updated from global requirements
+* Rename key_management to key_manager
+* Replace 'value' arguments in telemetry proxy
+* Add Port port_security_enabled property
+* Replace 'value' arguments in orchestration proxy
+* Replace 'value' arguments in object_store proxy
+* Replace 'value' arguments in network proxy
+
 0.7.3
 -----
 
@@ -90,6 +147,7 @@ CHANGES
 * Add node resource for cluster service
 * Add action resource for cluster service
 * Add policy resource for cluster service
+* Fix typos in docstrings:
 * s/stackforge/openstack/
 * Update .gitreview for new namespace
 * Add region resource to identity service
