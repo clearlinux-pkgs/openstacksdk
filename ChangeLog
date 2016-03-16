@@ -1,11 +1,46 @@
 CHANGES
 =======
 
+0.8.1
+-----
+
+* Add Hypervisor support to Compute Service
+
+0.8.0
+-----
+
+* Add Nova server group resource
+* Remove pool_id attr from creation request body of pool_member
+* Make metadata handling consistent in Object Store
+* Updated from global requirements
+* Override delete function of senlin cluster/node
+* Basic resource.prop for ID attributes (message)
+* Basic resource.prop for ID attributes (cluster)
+* Adding Check/Recover Actions to Clusters
+* Basic resource.prop for ID attributes (block store)
+* Basic resource.prop for ID attributes (orchestration)
+* Fix compute tests for resource.prop ID attributes
+* Basic resource.prop for ID attributes (compute)
+* Basic resource.prop for ID attributes (image)
+* Basic resource.prop for ID attributes (identity)
+* Basic resource.prop for ID attributes (telemetry)
+* Update attributes uses hard coded id
+* Adding check/recover actions to cluster nodes
+* Basic resource.prop for ID attributes (network)
+* Remove 'date' from Object resource
+* Make functional test resources configurable
+* Fix Port resource properties
+* Refactor profile set_ methods
+* Add UNIXEpoch formatter as a type for properties
+* Update create_network function in test_network
+
 0.7.4
 -----
 
 * Documentation for cluster API and resources
+* Resource object attributes not updated on some interfaces
 * Add ISO8601 formatter as a type for properties
+* Add LoadBalancer vip_port_id and provider properties
 * Raise NotFound exception when get a deleted stack
 * Updated from global requirements
 * download_object/get_object must have the same API
@@ -22,6 +57,7 @@ CHANGES
 * Update Quota documentation and properties
 * Update Subnet Pools Documentation
 * Update router's functional tests to validate is_ha property
+* Fix create_pool_member and update_pool_member
 * Updated from global requirements
 * Use assertTrue/False instead of assertEqual(T/F)
 * Remove status property from LBaaS resources

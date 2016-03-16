@@ -1,22 +1,2 @@
 # This file contains additional build requirements that did not get
 # picked up automatically. One name per line, no whitespace.
-os-client-config
-oslo.utils
-netifaces
-netaddr
-testtools
-testscenarios
-testrepository
-Sphinx
-requests-mock
-os-testr
-oslosphinx
-python-mock
-fixtures
-discover
-coverage
-hacking
-traceback2
-unittest2
-python-mimeparse
-extras
