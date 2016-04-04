@@ -1,6 +1,39 @@
 CHANGES
 =======
 
+0.8.4
+-----
+
+* Refactor Resource to better serve Proxy
+
+0.8.3
+-----
+
+* Consistent resource.prop for timestamps and booleans (cluster
+* Add address scope CRUD
+* Consistent resource.prop for timestamps and booleans (object store)
+* Consistent resource.prop for timestamps and booleans (network)
+* Consistent resource.prop for timestamps and booleans (identity)
+* Cluster user guide - first step
+* Consistent resource.prop for timestamps and booleans (orchestration)
+
+0.8.2
+-----
+
+* Consistent resource.prop for timestamps and booleans (telemetry)
+* Fix image member apis
+* Fix content-type for swift upload
+* Fix key manager secret resource object
+* Consistent resource.prop for timestamps and booleans (key manager)
+* Consistent resource.prop for timestamps and booleans (image)
+* Make metadata handling consistent in Compute
+* Fix coverage configuration and execution
+* Consistent resource.prop for timestamps and booleans (compute)
+* Fix functional tests
+* Add/Remove port interface to a router
+* Consistent resource.prop for timestamps and booleans (block store)
+* Consistent resource.prop for timestamps and booleans (metric)
+
 0.8.1
 -----
 
