@@ -1,18 +1,29 @@
 CHANGES
 =======
 
+0.8.5
+-----
+
+* Trivial: Fix typo in update_port() comment
+* Support client certificate/key
+* Add network resource properties
+* Updated from global requirements
+* Properly handle overridden Body properties
+
 0.8.4
 -----
 
+* BaseProxy refactoring for new Resource
 * Refactor Resource to better serve Proxy
 
 0.8.3
 -----
 
-* Consistent resource.prop for timestamps and booleans (cluster
+* Consistent resource.prop for timestamps and booleans (cluster)
 * Add address scope CRUD
 * Consistent resource.prop for timestamps and booleans (object store)
 * Consistent resource.prop for timestamps and booleans (network)
+* Fix serialize BoolStr formatter
 * Consistent resource.prop for timestamps and booleans (identity)
 * Cluster user guide - first step
 * Consistent resource.prop for timestamps and booleans (orchestration)
