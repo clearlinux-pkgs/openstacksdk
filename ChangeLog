@@ -1,10 +1,27 @@
 CHANGES
 =======
 
+0.8.6
+-----
+
+* Implement network agents
+* Updated from global requirements
+* Add network segment resource
+* Updated from global requirements
+* Set name_attribute on NetworkIPAvailability
+* Remove update_trust method from identity
+* Updated from global requirements
+* Remove openstack/common from tox.ini
+* Add support for Network IP Availability
+* Fix Resource.list usage of limit and marker params
+* Updated from global requirements
+* Don't hide cacert when insecure == False
+
 0.8.5
 -----
 
 * Trivial: Fix typo in update_port() comment
+* Support <scheme>://<netloc>/<prefix> endpoints
 * Support client certificate/key
 * Add network resource properties
 * Updated from global requirements
