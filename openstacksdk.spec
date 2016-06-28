@@ -4,7 +4,7 @@
 #
 Name     : openstacksdk
 Version  : 0.8.6
-Release  : 13
+Release  : 14
 URL      : http://tarballs.openstack.org/python-openstacksdk/openstacksdk-0.8.6.tar.gz
 Source0  : http://tarballs.openstack.org/python-openstacksdk/openstacksdk-0.8.6.tar.gz
 Summary  : An SDK for building applications to work with OpenStack
