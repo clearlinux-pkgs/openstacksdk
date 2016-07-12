@@ -1,16 +1,39 @@
 CHANGES
 =======
 
+0.9.0
+-----
+
+* Refactor compute for new resource/proxy
+* Allow alternate_id to be accessed directly
+* Add neutron rbac support
+* Updated from global requirements
+* Updated from global requirements
+* Add temporary test_proxy_base2
+* Add segment_id property to subnet resource
+* Allow resources to check their equality
+* Remove type=timestamp usages
+* Cluster user guide - part 2
+* Move version definition
+* Updated from global requirements
+* Updated from global requirements
+* Fix clustering event properties
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+
 0.8.6
 -----
 
 * Implement network agents
 * Updated from global requirements
+* Remove data type enforcement on fields (cluster)
 * Add network segment resource
 * Updated from global requirements
 * Set name_attribute on NetworkIPAvailability
 * Remove update_trust method from identity
 * Updated from global requirements
+* [Trivial] Remove executable privilege of doc/source/conf.py
 * Remove openstack/common from tox.ini
 * Add support for Network IP Availability
 * Fix Resource.list usage of limit and marker params
@@ -22,6 +45,8 @@ CHANGES
 
 * Trivial: Fix typo in update_port() comment
 * Support <scheme>://<netloc>/<prefix> endpoints
+* Use fixtures.TempDir
+* Use fixtures.EnvironmentVariable
 * Support client certificate/key
 * Add network resource properties
 * Updated from global requirements
