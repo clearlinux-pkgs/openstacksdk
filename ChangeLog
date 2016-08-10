@@ -1,6 +1,23 @@
 CHANGES
 =======
 
+0.9.1
+-----
+
+* Rebase cluster service to resource2/proxy2
+* Improve docstring for some resource2 methods
+* Add 'to_dict()' method to resource2.Resource
+* _alternate_id should return a server-side name
+* Make end-user modules accessible from top level
+* Updated from global requirements
+* Replace _transpose_component with _filter_component
+* Fix test_limits functional test failure
+* Remove update_flavor method from compute
+* Expose 'requires_id' to get_xxx proxy functions
+* Updated from global requirements
+* HAProxy uses milliseconds for its timeout values
+* Support fetching network project default quota
+
 0.9.0
 -----
 
