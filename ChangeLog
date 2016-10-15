@@ -1,6 +1,105 @@
 CHANGES
 =======
 
+0.9.8
+-----
+
+* avoid usage of keystoneauth1 sessions
+* Clarify argparse connections
+* Updated from global requirements
+* Add support for network Flavor
+* Remove dead code
+* Provide better fallback when finding id values
+* Updated from global requirements
+* Remove beta label for network segment resource
+* Add support for filter "status" in node list
+* Modified Metering Rule base_path
+* Update homepage with developer documentation page
+* Modified Metering base_path
+* Updated from global requirements
+* Added is_shared resource to Metering Label
+* Add QoS support to Network Port object
+
+0.9.7
+-----
+
+* Revert "Event list can not display "timestamp"
+* Event list can not display "timestamp"
+* Add project_id field to cluster's policy and profile
+* Fix the issue non-admin user failed to list trusts
+* Fix error in node action
+* compute/v2/server: add ?all_tenants=bool to list
+
+0.9.6
+-----
+
+* Add extended Glance Image properties
+* Fix connection init when session is provided
+* Rebase keystone v3 proxy to proxy2
+* Fix 'config_drive' and 'networks' for compute server
+* Fix cluster query mapping
+* Rebase keystone resources onto resource2
+* Add new function for router-gateway
+* Obtain Image checksum via additional GET
+* Adjust router add/remove interface method names
+* Add 'dependents' property to Node and Cluster class
+* Add QoS rule type object and CRUD commands
+* Add QoS bandwidth limit rule object and CRUD commands
+* Add QoS DSCP marking rule object and CRUD commands
+* Add QoS minimum bandwidth rule object and CRUD commands
+* Add network segment create, delete and update support
+* Rebase telemetry resources to resource2/proxy2
+* Fix telemetry/metering service version
+* Fix the issue that 'type' field is missing in profile list
+
+0.9.5
+-----
+
+* Updated from global requirements
+* Fix issue "SDKException: Connection failure that may be retried."
+* Updated from global requirements
+
+0.9.4
+-----
+
+* Refactor Key Manager for resource2
+* Fix problems about location header in resource2
+* Add support for claim for Zaqar V2 API
+
+0.9.3
+-----
+
+* Add support for subscription for Zaqar V2 API
+* Add policy validation for senlin
+* Add profile validation for senlin
+* Add QoS policy object and CRUD commands
+* Updated from global requirements
+* Fix orchestration service initialization
+* Minor network RBAC policy updates
+* Add 'check_stack' operation to proxy
+* Tweak endpoint discovery for apache-style services
+
+0.9.2
+-----
+
+* Add template validation support to orchestration
+* Add SoftwareDeployment resource to orchestration
+* Add SoftwareConfig resource to orchestration
+* Rebase orchestration to resource2/proxy2
+* Relocate alarm service into a submodule
+* Get endpoints directly from services
+* Add force-delete into compute service
+* Add services operations into compute service
+* Fix nova server image and flavor
+* Add support for message resource of Zaqar v2 API
+* Add support for Zaqar V2 queue resource
+* Add collect_cluster_attrs API to cluster service
+* Updated from global requirements
+* Fix cluster resource in cluster service
+* Add API microversion support
+* Updated from global requirements
+* Refactor image v2 to use resource2/proxy2
+
 0.9.1
 -----
 
