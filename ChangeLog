@@ -1,6 +1,32 @@
 CHANGES
 =======
 
+0.9.9
+-----
+
+* Add support for network Service Flavor Profile
+* Add filter "enabled" for cluster-policy-list
+* Add resources for Service Provider
+* Fix metadata property of Senlin node resource
+* Display neutron api error message more precisely
+* Add list method and query support for cinder volume and snapshot
+* Add Python 3.5 classifier and venv
+* Add filter options to the network proxy address_scopes() method()
+* Updated from global requirements
+* Add filters provider-* to the network proxy networks() method
+* Support to delete claimed message
+* Fix problem about location header in Zaqar resource2
+* Updated from global requirements
+* Add filter mac_address to the network proxy ports() method
+* Add dns-domain support to Network object
+* Prepare for baremetal API implementation
+* Updated from global requirements
+* Add limit and marker to QueryParameters class
+* Updated from global requirements
+* Document network resource query filters used by OSC
+* Add standard attributes to the core network resources
+* Add service_type resource to Subnets
+
 0.9.8
 -----
 
@@ -24,6 +50,7 @@ CHANGES
 -----
 
 * Revert "Event list can not display "timestamp"
+* Generalize endpoint determination
 * Event list can not display "timestamp"
 * Add project_id field to cluster's policy and profile
 * Fix the issue non-admin user failed to list trusts
