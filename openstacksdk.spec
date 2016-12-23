@@ -4,7 +4,7 @@
 #
 Name     : openstacksdk
 Version  : 0.9.9
-Release  : 20
+Release  : 21
 URL      : http://tarballs.openstack.org/python-openstacksdk/openstacksdk-0.9.9.tar.gz
 Source0  : http://tarballs.openstack.org/python-openstacksdk/openstacksdk-0.9.9.tar.gz
 Summary  : An SDK for building applications to work with OpenStack
