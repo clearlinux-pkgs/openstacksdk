@@ -1,6 +1,69 @@
 CHANGES
 =======
 
+0.9.13
+------
+
+* Add docs for the workflow service
+* Initial docs for bare-metal service
+* Fix error messages are not displayed correctly
+* Add project ID in QuotaDefault requests
+* Fix Setting Quotas in Neutron
+* Updated from global requirements
+* Modified DHCP/Network Resource
+* Network L3 Router Commands
+* Corrections in DHCP Agent Resource listing
+* Updated from global requirements
+* Add workflow service (mistral)
+* Add support_status to policy type and profile type
+
+0.9.12
+------
+
+* Add missing query parameters to compute v2 Server
+* Add support for Role resource in Identity v3
+* Add filter "user_id" for cluster receiver list
+* Add user_id in resource class Action/Node
+* Enable bare-metal service
+* Proxy module for bare-metal service
+* Base for workflow service (mistral)
+* Port resource for bare-metal service
+* PortGroup resource for bare-metal service
+* Updated from global requirements
+* Add user_id in resource class Policy
+* Node resource for bare-metal service
+* Chassis resource for bare-metal service
+* Driver resource for bare-metal service
+* Support for node replace in cluster service
+
+0.9.11
+------
+
+* Rebase network proxy to proxy2
+* Rebase network resources to resource2 (4)
+* Rebase network resources to resource2 (3)
+* Add 'project_id' field to volume resource
+* Rebase network resources onto resource2 (2)
+* Rebase network resources onto resource2 (1)
+* Add more server operations based on Nova API
+* Add user_id in profile resource
+* Add filters to the network proxy agents() method
+* Add auto-allocated-topology to SDK
+* Updated from global requirements
+* Document the `synchronized` parameter
+* Add 'project_id' field to cluster's action resource
+* Add QoS support to Network object
+
+0.9.10
+------
+
+* Revert "Display neutron api error message more precisely"
+* Updated from global requirements
+* Add resource for DHCP Agent
+* Add "sort" in policy binding list
+* Add filters "policy_type" and "policy_name" for policy binding list
+* Add filters to the router proxy routers() method
+
 0.9.9
 -----
 
@@ -21,6 +84,7 @@ CHANGES
 * Add dns-domain support to Network object
 * Prepare for baremetal API implementation
 * Updated from global requirements
+* Add reset_state api for compute
 * Add limit and marker to QueryParameters class
 * Updated from global requirements
 * Document network resource query filters used by OSC
