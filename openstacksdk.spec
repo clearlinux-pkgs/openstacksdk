@@ -5,15 +5,20 @@
 # Source0 file verified with key 0xB9069B1335700CDC (infra-root@openstack.org)
 #
 Name     : openstacksdk
-Version  : 0.9.13
-Release  : 22
-URL      : http://tarballs.openstack.org/python-openstacksdk/openstacksdk-0.9.13.tar.gz
-Source0  : http://tarballs.openstack.org/python-openstacksdk/openstacksdk-0.9.13.tar.gz
-Source99 : http://tarballs.openstack.org/python-openstacksdk/openstacksdk-0.9.13.tar.gz.asc
+Version  : 0.9.14
+Release  : 23
+URL      : http://tarballs.openstack.org/python-openstacksdk/openstacksdk-0.9.14.tar.gz
+Source0  : http://tarballs.openstack.org/python-openstacksdk/openstacksdk-0.9.14.tar.gz
+Source99 : http://tarballs.openstack.org/python-openstacksdk/openstacksdk-0.9.14.tar.gz.asc
 Summary  : An SDK for building applications to work with OpenStack
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: openstacksdk-python
+Requires: keystoneauth1
+Requires: os-client-config
+Requires: pbr
+Requires: six
+Requires: stevedore
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : python-dev
@@ -37,16 +42,16 @@ python components for the openstacksdk package.
 
 
 %prep
-%setup -q -n openstacksdk-0.9.13
+%setup -q -n openstacksdk-0.9.14
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1487199438
+export SOURCE_DATE_EPOCH=1489774226
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1487199438
+export SOURCE_DATE_EPOCH=1489774226
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
@@ -56,4 +61,5 @@ python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
 
 %files python
 %defattr(-,root,root,-)
-/usr/lib/python*/*
+/usr/lib/python2*/*
+/usr/lib/python3*/*
