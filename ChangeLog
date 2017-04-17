@@ -1,6 +1,50 @@
 CHANGES
 =======
 
+0.9.15
+------
+
+* Enable warnings_as_errors in doc enforcer
+* Add is_profile_only to Cluster resource
+* Add docs for volume_attachment compute methods
+* Add support for volume attachments in compute v2
+* Updated from global requirements
+* Add 'project_id' to Server query parameters
+* Clean up some errant doc warnings/errors
+* Add get_stack_* methods to documentation
+* Introduce Base for Octavia (load balancing)
+* Fix doc build if git is absent
+* Add vlan_transparent property to network resource
+* Filtering support by is_router_external to network resource
+* Find floating ip by ip address
+* Add StackFiles resource to orchestration v1
+* Expose ha_state property from HA enabled L3 Agents
+* Remove type restrict of block_device_mapping
+* Add StackEnvironment resource to orchestration v1
+* Shift some compute attributes within request body
+* StackTemplate resource for orchestration
+* Trivial: fix Template resource in orchestration
+* Avoid imports in openstack/__init__.py
+* Expose OS-EXT-SRV-ATTR:{hypervisor_hostname,instance_name} for Server
+* Add port property: trunk_details
+* Add image download example
+* Fix the network flavor disassociate method
+* Fix the telemetry statistics test
+* Correct a copy/paste mistake in a docstring
+* Fix the telemetry sample test
+* Fix network quota test so it works on gate
+* Enable streaming responses in download_image
+* Updated from global requirements
+* Update devstack config to point to a valid image
+* Add wait_for_xxx methods to cluster proxy
+* Change version of hacking in test-requirements
+* Reorganize cluster docs
+* Reorganize object_store docs
+* Reorganize workflow docs
+* Reorganize network docs
+* Reorganize telemetry docs
+* Reorganize block store docs
+
 0.9.14
 ------
 
