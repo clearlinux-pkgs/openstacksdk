@@ -6,7 +6,7 @@
 #
 Name     : openstacksdk
 Version  : 0.9.16
-Release  : 25
+Release  : 26
 URL      : https://tarballs.openstack.org/python-openstacksdk/openstacksdk-0.9.16.tar.gz
 Source0  : https://tarballs.openstack.org/python-openstacksdk/openstacksdk-0.9.16.tar.gz
 Source99 : https://tarballs.openstack.org/python-openstacksdk/openstacksdk-0.9.16.tar.gz.asc
