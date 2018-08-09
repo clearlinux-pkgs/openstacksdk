@@ -6,7 +6,7 @@
 #
 Name     : openstacksdk
 Version  : 0.17.2
-Release  : 28
+Release  : 29
 URL      : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.17.2.tar.gz
 Source0  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.17.2.tar.gz
 Source99 : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.17.2.tar.gz.asc
@@ -23,6 +23,7 @@ Requires: appdirs
 Requires: beautifulsoup4
 Requires: cryptography
 Requires: decorator
+Requires: deprecation
 Requires: docutils
 Requires: dogpile.cache
 Requires: futures
@@ -31,8 +32,10 @@ Requires: iso8601
 Requires: jmespath
 Requires: jsonpatch
 Requires: keystoneauth1
+Requires: munch
 Requires: netifaces
 Requires: openstackdocstheme
+Requires: os-service-types
 Requires: pbr
 Requires: reno
 Requires: requestsexceptions
@@ -105,7 +108,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1533787831
+export SOURCE_DATE_EPOCH=1533789443
 python3 setup.py build -b py3
 
 %install
