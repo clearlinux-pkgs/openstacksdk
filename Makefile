@@ -1,5 +1,5 @@
 PKG_NAME := openstacksdk
-URL = https://tarballs.openstack.org/python-openstacksdk/openstacksdk-0.12.0.tar.gz
+URL = https://tarballs.openstack.org/openstacksdk/openstacksdk-0.17.2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common

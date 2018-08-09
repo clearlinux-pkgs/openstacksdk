@@ -1,19 +1,184 @@
 CHANGES
 =======
 
+0.17.2
+------
+
+* Don't wait for task in submit\_task
+* baremetal: correct the default timeout in Node.set\_provision\_state
+
+0.17.1
+------
+
+* Update create\_object to handled chunked data
+* Update UPPER\_CONSTRAINTS\_FILE for stable/rocky
+* Update .gitreview for stable/rocky
+
+0.17.0
+------
+
+* Add create\_directory\_marker\_object method
+* Add ability to pass data to create\_object
+* Add flag for disabling object checksum generation
+* Use valid filters to list floating IPs in neutron
+* Add missing release note about vexxhost auth\_url
+* Add missing swift docstrings
+* Add /v3 to the auth\_url for vexxhost
+* Implement signature generation functionality
+* Add set\_provision\_state and wait\_for\_provision\_state for baremetal Node
+* meta: don't throw KeyError on misconfigured floating IPs
+
+0.16.0
+------
+
+* openstackcloud: properly handle scheduler\_hints
+* Add task manager parameter to Connection
+* Add Magnum /certificates support
+* Invalid link of doc reference
+* Support to wait for load balancer to be ACTIVE
+* Fix Magnum cluster update
+
+0.15.0
+------
+
+* Add support for processing insecure
+* Fix for passing dict for get\_\* methods
+* Handle Munch objects in proxies
+* Only send force parameter to live migration if supported
+* Add vip\_qos\_policy\_id options for loadbalancer
+* Implementing solution for 2002563 issue from story board
+* Add connection backreference to proxy instances
+* Add release note link in README
+* Hardcode v2.0 onto end of neutron endpoints
+* Add Magnum cluster support
+* Improve Magnum cluster templates functions
+* Finish migrating image tests to requests-mock
+* Convert image\_client mocks in test\_shade\_operator
+* Convert test\_caching to requests-mock
+* Convert domain params tests to requests\_mock
+* Move clustering additions from shade directories
+* Switch to providing created\_at field for servers
+* fix misspelling of 'server'
+* Adds Senlin support to openstacksdk
+* Support port binding extended attributes for querying port
+* Fix path for Limestone Networks vendor file
+* Fix clustering profile type miss list operation
+* Switch VEXXHOST to 'v3password' auth\_type
+* Change 'Member' role reference to 'member'
+* Add tests to verify behavior on '' in self link
+* Add hypervisor details to hypervisors list if requested
+* Add testing of availability\_zones() "details" argument
+* Allow configuring status\_code\_retries and connect\_retries via cloud config
+
+0.14.0
+------
+
+* Turn OSC tips jobs non-voting
+* Throw an error on conflicting microversion config
+* Rename service\_key to service\_type
+* Pass default\_microversion to adapter constructor
+* Honor service-type aliases in config
+* fix tox python3 overrides
+* Add ansible functional tests on stable-2.6
+* Modify the unhelpful error message when delete network
+* Modify the error message when unsetting gateway and setting FIP
+* Add ansible functional tests
+* Add 'port\_details' to Floating IP
+* rename vars to defaults to allow overriding in ansible tests
+* allow passing ansible variables to ansible tests
+* Several improvements to resource.wait\_for\_status
+* Added few image properties to Image class
+* Allow explicitly setting enable\_snat to either value
+* baremetal: refuse to inspect associated machines
+* Enable bare metal unit tests
+* Avoid globally modifying yaml library
+* Add get\_volume\_limits() support
+* Reenable osc-functional-devstack-tips and neutron-grenade
+* Remove default values of router's is\_ha and is\_distributed arguments
+* Defer all endpoint discovery to keystoneauth
+* Decode additional heat files
+* Add ipaddress and futures to lower-constraints
+* Bump default timeout values
+* Fix H103 Apache license header check
+* Remove D exclusions from flake8 config
+* Add comment about W503 being skipped
+* Add python 3.6 jobs
+* Add nodepool-functional-py35-src job
+* Fix F405 errors
+* Clean up floating ip tests
+* Avoid raising exception when comparing resource to None
+* Bugfix for block\_storage not selecting the correct proxy
+* Fixing bug where original and new dicts would always be the same
+* Change clustering example test create parameter
+* add missing attribute in LBaaS v2 Pool API
+* close files after open in unit/base
+* Honor endpoint\_override for get\_session\_client
+* Drop bogus attributes from network port resource
+* Flavor: added is\_public query parameter and description property
+* pypy is not checked at gate
+* Add Limestone Networks vendor info
+* Remove DataCentred from list of vendors
+
+0.13.0
+------
+
+* Don't assume a full config dict
+* Fix bugtracker and documentation references
+* Fix openstack-inventory
+* Trivial: Update pypi url to new url
+* Fix typo in README.rst
+* Add functional tests for Neutron DNS extension
+* Add support for DNS attributes for floating IPs
+* Temporarily disable neutron-grenade
+* Fix DNS Recordset CRUD
+* Add timeout options for listener
+* Allow members to be set as "backup"
+* Allow cascade deletion of load balancer
+* Strip the version prefix from the next link for pagination
+* Fix resource not exist the resource.status error
+* create\_subnet: Add filter on tenant\_id if specified
+* Add release note for added masakari support
+* Use 'none' auth plugin
+* Refactor \_get\_version\_arguments
+* Remove the need for OpenStackConfig in CloudRegion
+* Run normalize\_keys on config for session codepath
+* Add image\_format for VEXXHOST profile
+* add lower-constraints job
+* Add support for trunk ports and subports
+* Update python-openstacksdk references to openstacksdk
+* Rename python-openstacksdk to openstacksdk in zuul.yaml
+* fix doc title format error
+* Add instance\_ha service
+* Updated from global requirements
+* Fix response always being False
+* Add 409 ConflictException
+* Provide OpenStackConfigException backwards compat
+* Use defined version instead of service.version parameter
+* Fix 'block\_store' aliases define error
+* Fix TypeError in case of FloatingIP add and remove
+* Fix devstack tests
+* Replace old http links with the newest https ones in docs
+* Updated from global requirements
+* Allow not resolving outputs on get stacks
+* Redo role assignment list query filters
+
 0.12.0
 ------
 
 * Network: Add tag support for floating ip
 * Network: Add tag support for security group
 * Network: Add tag support for QoS policy
+* Prepare for os-client-config wrapper
 * Updated from global requirements
+* Run os-client-config tests on sdk changes
 * Fix private\_v4 selection related to floating ip matching
 * Temporarily disable osc-functional-devstack-tips
 * Functional test for set\_tags on Neutron resources
+* Update the invalid url in pages
 * Fix coverage running
 * Shift tag resource definition to TagMixin
 * Add support for dns-domain
+* Run examples tests with functional tests
 * Fix clustering force delete return error
 * Update clustering module's \_proxy comment message
 * Updated from global requirements
