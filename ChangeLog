@@ -1,18 +1,118 @@
 CHANGES
 =======
 
-0.17.2
+0.18.1
 ------
 
+* Don't start task managers passed in to Connection
+
+0.18.0
+------
+
+* Support v4-fixed-ip and v6-fixed-ip in create\_server
+* Update sphinx extension logging
+* Add stackviz processing to functional tests
+* Move wait\_for\_baremetal\_node\_lock to the baremetal proxy
+* Convert inspect\_machine to use the baremetal proxy
+* Adding two new regions and dynamic auth\_url based on region name
+* Update ElastX cloud profile
+* Update Auro cloud profile
+* Rearrange shade image code
+* Revert the Proxy metaclass
+* Make it clear that OpenStackCloud is a mixin
+* Start shifting cloud object-store methods to proxy
+* Remove all the deprecated stuff
+* Switch bare metal NIC actions in OpenStackCloud to baremetal Proxy calls
+* Use network proxy in openstack.cloud
+* Remove duplicate code
+* cloud: rename with deprecation validate\_node -> validate\_machine
+* Wire in retries for all baremetal actions
+* Correct updating baremetal nodes by name or ID
+* Add some warnings and clarifications for discovery
+* Make RateLimitingTaskManager the TaskManager
+* Import rate limiting TaskManager from nodepool
+* Remove api version default values
+* Use discovery instead of config to create proxies
+* Set endpoint\_override from endpoint with noauth
+* Remove profile
+* Support firewall service for SDK
+* Clean up python3 test and split networking into a job
+* Add functional tests for clustering
+* Clarify error message is from nova
+* Format URL when updating image props in Glance v1
+* Add compute API info and fix provider names
+* Update vendor support info for vexxhost
+* Update vendor support info for switchengines
+* Update vendor support info for ecs
+* Update vendor support info for catalyst
+* Restore timeout\_scaling\_factor
+* Fix location region field in docs
+* Run all tasks through the threadpool
+* Update the URL in doc
+* Turn down stevedore and urllib logging
+* Update .zuul.yaml
+* Update baremetal objects with fields added up to Rocky
+* Add sjc1 to vexxhost profile
+* Add support for configured NAT source variable
+* Explicitly set logging levels for external libs
+* Implement network update
+* Normalize security groups when using Neutron
+* Normalize image when using PUT on Glance v2
+* Fix typo
+* Consolidate cloud/base.py into functional/base.py
+* Implement volume update
+* Allow JMESPath on searching networking resources
+* Allow search on objects
+* Listing objects to return Munch objects
+* Allow search on containers
+* Change the method of role update
+* Fix list\_recordsets to deal with top-level key
+* baremetal: implement validate\_node
+* Support bare metal service error messages
+* baremetal: support newer microversions in {get,update,patch}\_machine
+* Run bifrost integration test jobs
+* Listing containers to return Munch objects
+* Invalidate cache upon container deletion
+* Handle missing endpoint\_data in maximum\_supported\_microversions
+* switch documentation job to new PTI
+* import zuul job settings from project-config
+* Alias NotFoundException to ResourceNotFound
+* Remove the duplicated word
+* baremetal: add support for VIF attach/detach API
+* Use the base Resource's JSON patch support in Image
+* Correct update operations for baremetal
+* Add simple create/show/delete functional tests for all baremetal resources
+* Fix the heat template resource more cleaner
+* Make resource a dict subclass usable by shade layer
+* Remove special handling of stacks
+* Add computed attribute type and location to base resource
+* Rename Resource get and update to not clash with dict
+* Add more options to enable ansible testing feature
+* Stop using the -consumer devstack jobs
+* Fix to\_dict recursion issues with circular aliases
+* Stop calling get\_all\_types when service-type is None
 * Don't wait for task in submit\_task
-* baremetal: correct the default timeout in Node.set\_provision\_state
-
-0.17.1
-------
-
+* Update storyboard links to use name
+* fix 2 typos in documentation
+* Pass microversion info through from Profile
+* python-shade expose MTU setting
+* Adds toggle port security on network create
+* Add a simple baremetal functional job
+* Add support for static routes
+* Handle image and object key metadata for shade transition
+* Update config doc url to point to openstacksdk
+* Remove the auto-creation of containers in create\_object
+* Add support for streaming object responses
+* Add method for returning a raw response for an object
 * Update create\_object to handled chunked data
-* Update UPPER\_CONSTRAINTS\_FILE for stable/rocky
-* Update .gitreview for stable/rocky
+* Support for microversions in baremetal resources
+* Support for microversions in base Resource
+* Update reno for stable/rocky
+* Support passing profile to get\_one
+* Send disk\_over\_commit if nova api < 2.25
+* Docs: Remove duplicate content in connection page
+* Docs: Include CloudRegion class
+* baremetal: correct the default timeout in Node.set\_provision\_state
 
 0.17.0
 ------
@@ -26,6 +126,7 @@ CHANGES
 * Add /v3 to the auth\_url for vexxhost
 * Implement signature generation functionality
 * Add set\_provision\_state and wait\_for\_provision\_state for baremetal Node
+* Run ansible tests against specific public cloud
 * meta: don't throw KeyError on misconfigured floating IPs
 
 0.16.0
@@ -69,6 +170,7 @@ CHANGES
 * Add hypervisor details to hypervisors list if requested
 * Add testing of availability\_zones() "details" argument
 * Allow configuring status\_code\_retries and connect\_retries via cloud config
+* Add some backoff to find\_best\_address
 
 0.14.0
 ------
@@ -88,6 +190,7 @@ CHANGES
 * allow passing ansible variables to ansible tests
 * Several improvements to resource.wait\_for\_status
 * Added few image properties to Image class
+* Fix filter style consistency for keystone assignment API
 * Allow explicitly setting enable\_snat to either value
 * baremetal: refuse to inspect associated machines
 * Enable bare metal unit tests
@@ -134,6 +237,7 @@ CHANGES
 * Add timeout options for listener
 * Allow members to be set as "backup"
 * Allow cascade deletion of load balancer
+* Fix wait for futures append 'result' error
 * Strip the version prefix from the next link for pagination
 * Fix resource not exist the resource.status error
 * create\_subnet: Add filter on tenant\_id if specified
