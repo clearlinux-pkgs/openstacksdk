@@ -1,15 +1,35 @@
 CHANGES
 =======
 
+0.19.0
+------
+
+* Filter ports in list\_ports when batching is in effect
+* Make Connection a context manager
+* Add close method to shutdown threadpool
+* Add port\_security\_enabled to create\_port valid kwargs
+* Fix incorrect use of flake8:noqa
+* Add doc depends to tox releasenotes environment
+* Call pre/post run task calls from TaskManager.submit\_task()
+* Don't pass disk\_format or container\_format to image task upload
+* Use python3 format syntax for citycloud
+* Stop running shade tests
+* Add support for per-service rate limits
+* Add vnic\_type to create\_port valid kwargs
+
 0.18.1
 ------
 
 * Don't start task managers passed in to Connection
+* Fix upload of Swift object smaller than segment limit (create\_object)
 
 0.18.0
 ------
 
+* Add all\_projects as a preferred alias for all\_tenants
 * Support v4-fixed-ip and v6-fixed-ip in create\_server
+* Add limit CRUD support
+* Add registered limit CRUD support
 * Update sphinx extension logging
 * Add stackviz processing to functional tests
 * Move wait\_for\_baremetal\_node\_lock to the baremetal proxy
@@ -25,6 +45,7 @@ CHANGES
 * Switch bare metal NIC actions in OpenStackCloud to baremetal Proxy calls
 * Use network proxy in openstack.cloud
 * Remove duplicate code
+* openstackcloud.py: Implement FWaaS wrapper methods
 * cloud: rename with deprecation validate\_node -> validate\_machine
 * Wire in retries for all baremetal actions
 * Correct updating baremetal nodes by name or ID
@@ -74,6 +95,7 @@ CHANGES
 * Listing containers to return Munch objects
 * Invalidate cache upon container deletion
 * Handle missing endpoint\_data in maximum\_supported\_microversions
+* Add the ability to extend a volume size
 * switch documentation job to new PTI
 * import zuul job settings from project-config
 * Alias NotFoundException to ResourceNotFound
