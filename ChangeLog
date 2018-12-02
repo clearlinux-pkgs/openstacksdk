@@ -1,13 +1,44 @@
 CHANGES
 =======
 
+0.20.0
+------
+
+* do not force interface=admin for identity api v3
+* Add functional tests for masakari
+* Make timeouts in functional tests configurable
+* Change approach to detailed listings of baremetal resources
+* new auth\_url for ELASTX
+* Advancing the protocal of the website to HTTPS in compute.rst
+* Fix neutron endpoint mangling
+* Add wait functions to orchestration proxy
+* Add a \_\_main\_\_ handler, version command
+* Test python2 with py27
+* Document "insecure" flag
+* Remove unused Task classes
+* Shift swift segment async code out of adapter
+* [Trivial Fix] Correct spelling error of "bandwidth"
+* Update min tox version to 2.0
+* Remove mocking workaround from adapter
+* Explicit set capabilities in VolumeDetail and SnapshotDetail
+* Fix bugs in debugging with Tox
+* Fix the conflict of urlparse between python2 and python3
+* Add networks to Limestone vendor
+* Apply list filter fix to servers and floating ips too
+
 0.19.0
 ------
 
+* Remove setup.py check from pep8 job
 * Filter ports in list\_ports when batching is in effect
+* Make delete\_unattached\_floating\_ips return a count
+* Fix latest flake8 issues
+* Use sdk for list\_servers
 * Make Connection a context manager
 * Add close method to shutdown threadpool
+* Added basic CRUD functionality around Host Aggregates
 * Add port\_security\_enabled to create\_port valid kwargs
+* Added assign function to identity v3 proxy
 * Fix incorrect use of flake8:noqa
 * Add doc depends to tox releasenotes environment
 * Call pre/post run task calls from TaskManager.submit\_task()
@@ -71,6 +102,7 @@ CHANGES
 * Run all tasks through the threadpool
 * Update the URL in doc
 * Turn down stevedore and urllib logging
+* Handle empty values in regions
 * Update .zuul.yaml
 * Update baremetal objects with fields added up to Rocky
 * Add sjc1 to vexxhost profile
@@ -92,6 +124,7 @@ CHANGES
 * Support bare metal service error messages
 * baremetal: support newer microversions in {get,update,patch}\_machine
 * Run bifrost integration test jobs
+* compute: fix typo in update\_security\_groups()
 * Listing containers to return Munch objects
 * Invalidate cache upon container deletion
 * Handle missing endpoint\_data in maximum\_supported\_microversions
