@@ -1,13 +1,44 @@
 CHANGES
 =======
 
+0.21.0
+------
+
+* Avoid dogpile.cache 0.7.0
+* Add host aggregate missing functions
+* Fix requesting specific fields from ironic
+* Deal with double-normalization of host\_id
+* Add propagate\_uplink\_status to port
+* Fix query parameters of network.port\_forwarding
+* Change openstack-dev to openstack-discuss
+* block\_storage.backup func tests to use configurable timeout
+* Replace neutron-grenade job with grenade-py3
+* Change openstack-dev to openstack-discuss
+* Support non-public volume types
+* Move server munch transformation into normalize
+* object\_store: exposes the prefix parameter
+* Add support for octavia's resuorces quota
+* Transform server with munch before normalizing
+* syntax errors and undefined exceptions in service\_description.py
+* Refactor tag support
+
 0.20.0
 ------
 
+* Support remote vendor profiles
+* Slightly refactor vendor profile loading
+* Add CRUD methods for Neutron Port Forwarding
 * do not force interface=admin for identity api v3
+* Update link address for vendor support
+* Check result of server metadata operation
 * Add functional tests for masakari
 * Make timeouts in functional tests configurable
 * Change approach to detailed listings of baremetal resources
+* Add missing properties for role
+* Add missing seperator between words
+* Register proxy directly in add\_service
+* implement block-storage backup resource
+* Fix some spelling in documentation
 * new auth\_url for ELASTX
 * Advancing the protocal of the website to HTTPS in compute.rst
 * Fix neutron endpoint mangling
