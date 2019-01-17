@@ -1,10 +1,46 @@
 CHANGES
 =======
 
+0.23.0
+------
+
+* Document "Role Assignment Operations"
+* Fix for not released thread in get\_session\_client
+* Fix for not released thread in service\_description
+* implement identity v3 Proxy group role management
+* Add block\_storage v3 API support
+* Fix/Add : Identity V3 validate user role
+* Bug : identity v3 Proxy role assignments only support instances
+* Add network segment range resource
+* Add port property: port-resource-request
+* Restrict inventory test to devstack-admin
+* Stop running grenade-py3
+* Skip v2 block-storage tests when service is not found
+* implement identity v3 Proxy "unassign\_project\_role\_from\_user"
+* Skip block storage v2 functional tests for a minute
+* Fix pagination key detection
+* Fix the misspelling of "configuration"
+* fix typos
+* Unpin dogpile.cache
+* Rework orchestration to add update preview
+* Add possibility to override base\_path for resource operations
+
+0.22.0
+------
+
+* Drop self.conn from base.TestCase
+* Start using direct REST in normalize tests
+* Properly munch for resource sub-dicts
+* Turn off unneeded devstack services
+* Import code for building ironic-compatible configdrives
+* Adds kwargs support when creating a Neutron subnet
+* Fix dogpile.cache 0.7.0 interaction
+
 0.21.0
 ------
 
 * Avoid dogpile.cache 0.7.0
+* Change openstack-dev to openstack-discuss
 * Add host aggregate missing functions
 * Fix requesting specific fields from ironic
 * Deal with double-normalization of host\_id
