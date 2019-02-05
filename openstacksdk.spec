@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x1A541148054E9E38 (infra-root@openstack.org)
 #
 Name     : openstacksdk
-Version  : 0.23.0
-Release  : 38
-URL      : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.23.0.tar.gz
-Source0  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.23.0.tar.gz
-Source99 : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.23.0.tar.gz.asc
+Version  : 0.24.0
+Release  : 40
+URL      : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.24.0.tar.gz
+Source0  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.24.0.tar.gz
+Source99 : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.24.0.tar.gz.asc
 Summary  : An SDK for building applications to work with OpenStack
 Group    : Development/Tools
 License  : Apache-2.0
@@ -86,14 +86,14 @@ python3 components for the openstacksdk package.
 
 
 %prep
-%setup -q -n openstacksdk-0.23.0
+%setup -q -n openstacksdk-0.24.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1547737472
+export SOURCE_DATE_EPOCH=1549337480
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 

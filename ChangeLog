@@ -1,6 +1,26 @@
 CHANGES
 =======
 
+0.24.0
+------
+
+* Fix resource deletion in clustering
+* Added Octavia load balancer and listener stats
+* Adds tags support for Octavia (load\_balancer)
+* Fix indentation for new pycodestyle E117
+* fix typo
+* Use pagination detection by default
+* Fix raise create\_server and attach to a network given a net-name param
+* Fixes for Unicode characters in python 2 requests
+* Adds prefixlen to the request body when creating subnets
+* Support dict of links in pagination detection
+* use overriden base\_path in remaining CRUD operations
+* Add a non-voting job with metalsmith
+* Update cirros version for functional tests
+* Fixed incorrect exception raising in configdrive generation
+* Add baremetal Node fields from versions 1.47 - 1.49
+* Return retries on HTTP CONFLICT to baremetal.attach\_vif\_to\_node
+
 0.23.0
 ------
 
@@ -10,6 +30,7 @@ CHANGES
 * implement identity v3 Proxy group role management
 * Add block\_storage v3 API support
 * Fix/Add : Identity V3 validate user role
+* Compute location properly in server
 * Bug : identity v3 Proxy role assignments only support instances
 * Add network segment range resource
 * Add port property: port-resource-request
