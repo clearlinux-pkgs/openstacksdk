@@ -6,7 +6,7 @@
 #
 Name     : openstacksdk
 Version  : 0.24.0
-Release  : 40
+Release  : 41
 URL      : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.24.0.tar.gz
 Source0  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.24.0.tar.gz
 Source99 : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.24.0.tar.gz.asc
@@ -18,12 +18,9 @@ Requires: openstacksdk-license = %{version}-%{release}
 Requires: openstacksdk-python = %{version}-%{release}
 Requires: openstacksdk-python3 = %{version}-%{release}
 Requires: PyYAML
-Requires: Sphinx
 Requires: appdirs
-Requires: beautifulsoup4
 Requires: cryptography
 Requires: decorator
-Requires: docutils
 Requires: dogpile.cache
 Requires: futures
 Requires: ipaddress
@@ -33,10 +30,8 @@ Requires: jsonpatch
 Requires: keystoneauth1
 Requires: munch
 Requires: netifaces
-Requires: openstackdocstheme
 Requires: os-service-types
 Requires: pbr
-Requires: reno
 Requires: requestsexceptions
 Requires: six
 BuildRequires : buildreq-distutils3
@@ -93,7 +88,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1549337480
+export SOURCE_DATE_EPOCH=1551029595
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
