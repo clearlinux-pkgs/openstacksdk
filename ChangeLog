@@ -1,9 +1,40 @@
 CHANGES
 =======
 
+0.25.0
+------
+
+* Add glance image import support
+* Use retriable\_status\_codes in image upload
+* Move image methods to sdk image proxy
+* Tweak find\_image method to search in hidden images
+* Add agent property: resources-synced
+* Use mock context in test\_fwaas
+* Add image.task resource
+* baremetal: support network\_data when building configdrive
+*  Add missing py37 and corrected default envlist
+* Fix syntax error with exception handling
+* handle "paginated" argument in test\_list properly
+* Fix minor issues in the baremetal proxy docs
+* Add image attributes from v2.7
+* Make sure we pick flavors with disk
+* Add image.schema resource
+* baremetal: support for allocation API
+* baremetal: implement set\_node\_power\_state in the proxy
+* Stop mocking method in fwaas test
+* Rename compute.service.zone to availability\_zone
+* Make all resource locations process project\_id
+* Added server diagnostics
+
 0.24.0
 ------
 
+* Add support for bodyless commits
+* Add Octavia (load\_balancer) amphora API
+* Add Octavia (load\_balancer) flavor API
+* Add Octavia (load\_balancer) flavor profile API
+* Add Octavia (load\_balancer) provider API support
+* Add Octavia (load\_balancer) load balancer failover
 * Fix resource deletion in clustering
 * Added Octavia load balancer and listener stats
 * Adds tags support for Octavia (load\_balancer)
