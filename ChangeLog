@@ -1,9 +1,18 @@
 CHANGES
 =======
 
+0.26.0
+------
+
+* Revert "Replace TaskManager with a keystoneauth concurrency"
+* Add support to get recovery workflow details
+* Make tox tips job actually run sdk tests
+* Replace TaskManager with a keystoneauth concurrency
+
 0.25.0
 ------
 
+* Add image tasks schema methods
 * Add glance image import support
 * Use retriable\_status\_codes in image upload
 * Move image methods to sdk image proxy
