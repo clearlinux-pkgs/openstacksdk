@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+0.27.0
+------
+
+* Replace TaskManager with a keystoneauth concurrency
+* Replace openstack.org git:// URLs with https://
+* Update UPPER\_CONSTRAINTS\_FILE for stable/stein
+* Update .gitreview for stable/stein
+
 0.26.0
 ------
 
