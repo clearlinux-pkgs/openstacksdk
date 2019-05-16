@@ -1,25 +1,81 @@
 CHANGES
 =======
 
-0.27.0
+0.28.0
 ------
 
-* Replace TaskManager with a keystoneauth concurrency
+* Continue refactoring of the image
+* Workaround older octavia version discovery
+* Skip attaching FloatingIP if it is already attached
+* Add support for all\_tenants in OpenStackInventory
+* fixing timing
+* Uncap jsonschema
+* Add "name" filter in "list" call when retrieving a single register
+* Update compute.server resource
+* Deduplicate next-page URL's query params
+* Finish updating links to point to opendev
+* OpenDev Migration Patch
+* Support for the baremetal introspection service
+* Remove now unused task\_manager file
+* Update baremetal to use proxy logger
+* Actually pass on network\_data when building configdrive
+* Return None from get\_server\_by\_id on 404
+* Try to fix the masakari CI job
+* Support microversion 2.61 for nova flavors
+* Add logger to Proxy object
+* Removing region La1 from the list of regions
+* baremetal: Add support for mkisofs and xorrisofs for configdrive
+* Add floating IP port forwarding related methods
+* Clarify error if no version can be found
+* Bail earlier on a version mismatch for a supported service
+* Expand on a brief error message
+* Move Orchestration methods into Proxy
+* Expose locked status for Server
+* Remove and rearrange object bonged proxy tests
+* Move set\_temp\_url\_key logic into resource objects
+* Add support for generating form-post signatures
+* Allow replacing service implementation
+* Cleanup split of openstackcloud
+* Make PATCH a first class operation and support it for baremetal
+* Do not disregard tags when updating stacks
+* Adds missing "params" attribute for creating a Mistral workflow execution
+* Split OpenStackCloud into reasonable pieces
+* add python 3.7 unit test job
+* Update master for stable/stein
+* Fix wait\_for\_server docstring
+* Create runtime descriptor for new service
+* Add unit tests for connection.add\_service
+* Add proxy API reference to baremetal user guide
+* baremetal: implement the correct update of the maintenance\_reason field
+* Use auth\_url as identity endpoint when not project scoped
 * Replace openstack.org git:// URLs with https://
-* Update UPPER\_CONSTRAINTS\_FILE for stable/stein
-* Update .gitreview for stable/stein
+* Collect request stats
+* Collapse OpenStackSDKAdapter into Proxy
+* added support for binding:profile parameter in create\_port/update\_port
+* Revert "Revert "Replace TaskManager with a keystoneauth concurrency""
 
 0.26.0
 ------
 
 * Revert "Replace TaskManager with a keystoneauth concurrency"
+* Move pep8 requirements in to test-requirements
+* Fix some typos
+* Deprecate ServerDetails class
+* Remove outdated devstack section from docs
+* Swap human-facing links to use opendev.org
+* Deprecate VolumeDetail and BackupDetail classes
+* Move object methods to object\_store proxy
 * Add support to get recovery workflow details
+* baremetal: support server-side configdrive building (API 1.56)
 * Make tox tips job actually run sdk tests
 * Replace TaskManager with a keystoneauth concurrency
+* Add DNS support
+* Get rid of setUpClass and block it for forever
 
 0.25.0
 ------
 
+* Add image.service\_info resources
 * Add image tasks schema methods
 * Add glance image import support
 * Use retriable\_status\_codes in image upload
@@ -265,6 +321,7 @@ CHANGES
 * Invalidate cache upon container deletion
 * Handle missing endpoint\_data in maximum\_supported\_microversions
 * Add the ability to extend a volume size
+* Test \_alternate\_id logic
 * switch documentation job to new PTI
 * import zuul job settings from project-config
 * Alias NotFoundException to ResourceNotFound
