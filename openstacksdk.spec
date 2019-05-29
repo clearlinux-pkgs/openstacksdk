@@ -6,7 +6,7 @@
 #
 Name     : openstacksdk
 Version  : 0.28.0
-Release  : 46
+Release  : 47
 URL      : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.28.0.tar.gz
 Source0  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.28.0.tar.gz
 Source99 : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.28.0.tar.gz.asc
@@ -22,7 +22,6 @@ Requires: appdirs
 Requires: cryptography
 Requires: decorator
 Requires: dogpile.cache
-Requires: futures
 Requires: ipaddress
 Requires: iso8601
 Requires: jmespath
@@ -40,7 +39,6 @@ BuildRequires : buildreq-distutils3
 BuildRequires : cryptography
 BuildRequires : decorator
 BuildRequires : dogpile.cache
-BuildRequires : futures
 BuildRequires : ipaddress
 BuildRequires : iso8601
 BuildRequires : jmespath
@@ -54,12 +52,26 @@ BuildRequires : requestsexceptions
 BuildRequires : six
 
 %description
-openstacksdk
 ============
-openstacksdk is a client library for building applications to work
-with OpenStack clouds. The project aims to provide a consistent and
-complete set of interactions with OpenStack's many services, along with
-complete documentation, examples, and tools.
+        
+        openstacksdk is a client library for building applications to work
+        with OpenStack clouds. The project aims to provide a consistent and
+        complete set of interactions with OpenStack's many services, along with
+        complete documentation, examples, and tools.
+        
+        It also contains an abstraction interface layer. Clouds can do many things, but
+        there are probably only about 10 of them that most people care about with any
+        regularity. If you want to do complicated things, the per-service oriented
+        portions of the SDK are for you. However, if what you want is to be able to
+        write an application that talks to clouds no matter what crazy choices the
+        deployer has made in an attempt to be more hipster than their self-entitled
+        narcissist peers, then the Cloud Abstraction layer is for you.
+        
+        A Brief History
+        ---------------
+        
+        .. TODO(shade) This history section should move to the docs. We can put a
+           link to the published URL here in the README, but it's too long.
 
 %package bin
 Summary: bin components for the openstacksdk package.
@@ -104,7 +116,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1558018863
+export SOURCE_DATE_EPOCH=1559110495
+export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
