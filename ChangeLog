@@ -1,6 +1,20 @@
 CHANGES
 =======
 
+0.29.0
+------
+
+* Update Limestone Networks vendor config
+* baremetal: allow updating name and extra fields of an allocation
+* Add ability to provide qos\_policy\_id for port
+* Adding dns\_domain parameter into create\_network
+* Cap sphinx for py2 to match global requirements
+* Link to baremetal API reference from patch\_node
+* Add image.stage methods
+* Add support for vendor hooks
+* Replace use of log.warn with log.warning
+* Extract image download method into a mixin
+
 0.28.0
 ------
 
