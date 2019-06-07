@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+0.30.0
+------
+
+* Get rid of unused \_OpenStackCloudMixin.get\_region
+* Support Proxy-specific region\_name
+* Make factory for a CloudRegion from CONF objects
+
 0.29.0
 ------
 
