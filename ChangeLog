@@ -1,12 +1,22 @@
 CHANGES
 =======
 
+0.31.0
+------
+
+* baremetal: raise more specific ResourceFailure in wait\_for\_\* methods
+* Pin to latest os-service-types
+* Add release note for new disable service functionality
+* Minor fixups from from\_conf changes
+* Handle oslo.config exceptions in from\_conf
+
 0.30.0
 ------
 
 * Get rid of unused \_OpenStackCloudMixin.get\_region
 * Support Proxy-specific region\_name
 * Make factory for a CloudRegion from CONF objects
+* Support skipping unknown QP
 
 0.29.0
 ------
