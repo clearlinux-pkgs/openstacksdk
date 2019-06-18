@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+0.31.1
+------
+
+* Set xenapi\_use\_agent to "False" instead of false
+* Add access alias (aka) for the resource attributes
+
 0.31.0
 ------
 
@@ -16,6 +22,7 @@ CHANGES
 * Get rid of unused \_OpenStackCloudMixin.get\_region
 * Support Proxy-specific region\_name
 * Make factory for a CloudRegion from CONF objects
+* Use Resource layer for compute AZ and Aggregates
 * Support skipping unknown QP
 
 0.29.0
