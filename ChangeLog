@@ -1,20 +1,40 @@
 CHANGES
 =======
 
+0.31.2
+------
+
+* Correct endpoint\_override discovery for service with dashes in their type
+* Can't create a metadata named key, clear, delete
+* Repair masakari FT
+* Return empty lists for resources if neutron doesn't exist
+* Fix typo for subnet.py This 'slacc' should be 'slaac'
+* Add Python 3 Train unit tests
+* Increase randomness in ZONE creation
+* Fix invalid assert state
+* Replace nodepool func jobs
+* Allow deeper levels of nesting for pdf builds
+* Switch cloud layer to use proxy for DNS
+* from\_conf: fix handling service names with dashes
+
 0.31.1
 ------
 
 * Set xenapi\_use\_agent to "False" instead of false
+* Use Resource layer for network SecurityGroups
 * Add access alias (aka) for the resource attributes
 
 0.31.0
 ------
 
 * baremetal: raise more specific ResourceFailure in wait\_for\_\* methods
+* Use Resource layer for next compute methods
 * Pin to latest os-service-types
 * Add release note for new disable service functionality
 * Minor fixups from from\_conf changes
 * Handle oslo.config exceptions in from\_conf
+* Support deleting all routes in update\_router
+* Use Resource layer in cloud for SecurityGroups of server
 
 0.30.0
 ------
@@ -22,6 +42,7 @@ CHANGES
 * Get rid of unused \_OpenStackCloudMixin.get\_region
 * Support Proxy-specific region\_name
 * Make factory for a CloudRegion from CONF objects
+* Use Resource layer for the compute Hypervsors and Images
 * Use Resource layer for compute AZ and Aggregates
 * Support skipping unknown QP
 
