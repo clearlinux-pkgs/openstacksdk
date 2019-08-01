@@ -1,10 +1,21 @@
 CHANGES
 =======
 
+0.32.0
+------
+
+* Add node traits support to baremetal
+* Fix image deletion with tasks\_api enabled
+* docs: Add simplified CLI parser docs
+* Add set-boot-device to baremetal
+* Update api-ref location
+
 0.31.2
 ------
 
 * Correct endpoint\_override discovery for service with dashes in their type
+* Specify store when importing an image
+* force specify project\_id during create Sg\_rule may cause issue
 * Can't create a metadata named key, clear, delete
 * Repair masakari FT
 * Return empty lists for resources if neutron doesn't exist
@@ -16,6 +27,7 @@ CHANGES
 * Allow deeper levels of nesting for pdf builds
 * Switch cloud layer to use proxy for DNS
 * from\_conf: fix handling service names with dashes
+* Use Resource layer for compute KeyPairs
 
 0.31.1
 ------
@@ -23,6 +35,7 @@ CHANGES
 * Set xenapi\_use\_agent to "False" instead of false
 * Use Resource layer for network SecurityGroups
 * Add access alias (aka) for the resource attributes
+* URL encode swift objects endpoints
 
 0.31.0
 ------
