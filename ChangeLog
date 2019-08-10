@@ -1,6 +1,19 @@
 CHANGES
 =======
 
+0.33.0
+------
+
+* Fix dns return values
+* Update betacloud vendor entry
+* Fix bm tests: sort lists being compared
+* Enable ansible module test for keypair to check return data
+* Fix DeprecationWarning for using logger.warn
+* Add CloudRegion helper method for arbitrary endpoints
+* Move the history lesson into the docs
+* Fix README example for cloud layer
+* Update links
+
 0.32.0
 ------
 
@@ -24,6 +37,7 @@ CHANGES
 * Increase randomness in ZONE creation
 * Fix invalid assert state
 * Replace nodepool func jobs
+* Add Python 3 Train unit tests
 * Allow deeper levels of nesting for pdf builds
 * Switch cloud layer to use proxy for DNS
 * from\_conf: fix handling service names with dashes
