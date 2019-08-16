@@ -1,14 +1,29 @@
 CHANGES
 =======
 
+0.34.0
+------
+
+* Bump keystoneauth1 minimum to 3.16.0
+* Add support for fields in baremetal get\_\* resources
+* Add support for global\_request\_id
+* Fix discovery cache sharing
+* DRY test\_connection
+* Retry large object manifest upload
+* bug: avoid unnecessary object meta prefix
+* Skip most service\_description for unknown services
+
 0.33.0
 ------
 
 * Fix dns return values
+* Initalize pool\_executor so close works
 * Update betacloud vendor entry
+* Allow limiting Connection service\_types from oslo.config
 * Fix bm tests: sort lists being compared
 * Enable ansible module test for keypair to check return data
 * Fix DeprecationWarning for using logger.warn
+* baremetal.configdrive: tolerate user\_data as a string
 * Add CloudRegion helper method for arbitrary endpoints
 * Move the history lesson into the docs
 * Fix README example for cloud layer
