@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xFC43F0EE211DFED8 (infra-root@openstack.org)
 #
 Name     : openstacksdk
-Version  : 0.34.0
-Release  : 56
-URL      : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.34.0.tar.gz
-Source0  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.34.0.tar.gz
-Source1 : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.34.0.tar.gz.asc
+Version  : 0.35.0
+Release  : 57
+URL      : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.35.0.tar.gz
+Source0  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.35.0.tar.gz
+Source1 : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.35.0.tar.gz.asc
 Summary  : An SDK for building applications to work with OpenStack
 Group    : Development/Tools
 License  : Apache-2.0
@@ -95,14 +95,14 @@ python3 components for the openstacksdk package.
 
 
 %prep
-%setup -q -n openstacksdk-0.34.0
+%setup -q -n openstacksdk-0.35.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1565917879
+export SOURCE_DATE_EPOCH=1566664177
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar

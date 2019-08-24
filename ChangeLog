@@ -1,13 +1,27 @@
 CHANGES
 =======
 
+0.35.0
+------
+
+* Fix AttributeError bug when creating nested stacks
+* Add 'tag' support to compute with supported microversion
+* Replace catalog-v3.json with keystoneauth fixture
+* Rationalize endpoint\_for and get\_endpoint\_from\_catalog
+* Add strict\_proxies option for Connection
+* Avoid unnecessary object meta prefix in proxy
+* Add header to auto-delete image upload objects
+* Add 'node' attribute to baremetal Allocation
+
 0.34.0
 ------
 
 * Bump keystoneauth1 minimum to 3.16.0
 * Add support for fields in baremetal get\_\* resources
+* Validate that connect\_as connects as the project
 * Add support for global\_request\_id
 * Fix discovery cache sharing
+* Minor refactor cleanup of \_make\_proxy
 * DRY test\_connection
 * Retry large object manifest upload
 * bug: avoid unnecessary object meta prefix
