@@ -1,6 +1,17 @@
 CHANGES
 =======
 
+0.36.0
+------
+
+* Fix image create with tags
+* Properly convert baremetal fields to server-side values
+* baremetal-introspection: fix passing a Node to start\_introspection
+* Strip two more accept headers from object-storage
+* Add a fields meta\_data to result of Senlin API
+* Remove Accept header with empty value for HEAD and DELETE requests
+* Rework statistics reporting
+
 0.35.0
 ------
 
@@ -47,6 +58,7 @@ CHANGES
 ------
 
 * Add node traits support to baremetal
+* Volume.Backup restore fixes
 * Fix image deletion with tasks\_api enabled
 * docs: Add simplified CLI parser docs
 * Add set-boot-device to baremetal
