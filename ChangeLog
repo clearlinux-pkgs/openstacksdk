@@ -1,12 +1,31 @@
 CHANGES
 =======
 
+0.37.0
+------
+
+* Re-add functional tests on flavor content
+* Fix server for later microversion
+* Start supporting type info
+* Use generated list of services instead of metaclass
+* Use has\_service in functional test's require\_service
+* Support vendor data in configdrive building
+* Add a non-voting ironic-inspector job
+* Make proxy honor raise\_exc in REST primitives
+* Make the bifrost job non-voting
+* Update the constraints url
+* Update master for stable/train
+* fix "How To Contribute" url
+
 0.36.0
 ------
 
 * Fix image create with tags
 * Properly convert baremetal fields to server-side values
+* baremetal-introspection: add manage\_boot argument to start\_introspection
 * baremetal-introspection: fix passing a Node to start\_introspection
+* Cleanup doc/source/conf.py
+* Build PDF docs
 * Strip two more accept headers from object-storage
 * Add a fields meta\_data to result of Senlin API
 * Remove Accept header with empty value for HEAD and DELETE requests

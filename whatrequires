@@ -1,5 +1,6 @@
 # This file contains recursive sources that require this package
 ironic
+neutron
 os-client-config
 osc-lib
 python-openstackclient

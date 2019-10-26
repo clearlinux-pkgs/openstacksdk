@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xFC43F0EE211DFED8 (infra-root@openstack.org)
 #
 Name     : openstacksdk
-Version  : 0.36.0
-Release  : 58
-URL      : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.36.0.tar.gz
-Source0  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.36.0.tar.gz
-Source1 : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.36.0.tar.gz.asc
+Version  : 0.37.0
+Release  : 59
+URL      : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.37.0.tar.gz
+Source0  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.37.0.tar.gz
+Source1 : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.37.0.tar.gz.asc
 Summary  : An SDK for building applications to work with OpenStack
 Group    : Development/Tools
 License  : Apache-2.0
@@ -50,6 +50,7 @@ BuildRequires : os-service-types
 BuildRequires : pbr
 BuildRequires : requestsexceptions
 BuildRequires : six
+BuildRequires : util-linux
 
 %description
 openstacksdk
@@ -95,14 +96,14 @@ python3 components for the openstacksdk package.
 
 
 %prep
-%setup -q -n openstacksdk-0.36.0
+%setup -q -n openstacksdk-0.37.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1568870963
+export SOURCE_DATE_EPOCH=1572104345
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
@@ -119,7 +120,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/openstacksdk
-cp LICENSE %{buildroot}/usr/share/package-licenses/openstacksdk/LICENSE
+cp %{_builddir}/openstacksdk-0.37.0/LICENSE %{buildroot}/usr/share/package-licenses/openstacksdk/57aed0b0f74e63f6b85cce11bce29ba1710b422b
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -134,7 +135,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/openstacksdk/LICENSE
+/usr/share/package-licenses/openstacksdk/57aed0b0f74e63f6b85cce11bce29ba1710b422b
 
 %files python
 %defattr(-,root,root,-)
