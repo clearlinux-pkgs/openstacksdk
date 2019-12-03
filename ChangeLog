@@ -1,10 +1,24 @@
 CHANGES
 =======
 
+0.38.0
+------
+
+* Keep connection backrefs with weakref.proxy
+* baremetal node: 'error' is a failed state
+* Add router add/remove route operations
+* Increase test timeout for 2 tests in TestImageProxy class
+* Increase dogpile version for Py3.7 compatibility
+* CI: add ironic-python-agent-builder to the ironic job
+* Switch to Ussuri jobs
+
 0.37.0
 ------
 
 * Re-add functional tests on flavor content
+* Add support for Node tainted field
+* Add clustering update\_action
+* Bump the openstackdocstheme extension to 1.20
 * Fix server for later microversion
 * Start supporting type info
 * Use generated list of services instead of metaclass
@@ -65,6 +79,7 @@ CHANGES
 * Update betacloud vendor entry
 * Allow limiting Connection service\_types from oslo.config
 * Fix bm tests: sort lists being compared
+* Add application credential CRUD support
 * Enable ansible module test for keypair to check return data
 * Fix DeprecationWarning for using logger.warn
 * baremetal.configdrive: tolerate user\_data as a string
