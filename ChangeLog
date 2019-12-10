@@ -1,12 +1,22 @@
 CHANGES
 =======
 
+0.39.0
+------
+
+* update OVH vendor entry
+* Fix reno index list indent
+* Expose baremetal Node.owner
+* Update deps for tox venv target
+* Fix .. note:: rendering in doc
+
 0.38.0
 ------
 
 * Keep connection backrefs with weakref.proxy
 * baremetal node: 'error' is a failed state
 * Add router add/remove route operations
+* tox: Keeping going with docs
 * Increase test timeout for 2 tests in TestImageProxy class
 * Increase dogpile version for Py3.7 compatibility
 * CI: add ironic-python-agent-builder to the ironic job

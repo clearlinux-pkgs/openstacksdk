@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x4F398DEAE440091C (infra-root@openstack.org)
 #
 Name     : openstacksdk
-Version  : 0.38.0
-Release  : 61
-URL      : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.38.0.tar.gz
-Source0  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.38.0.tar.gz
-Source1 : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.38.0.tar.gz.asc
+Version  : 0.39.0
+Release  : 62
+URL      : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.39.0.tar.gz
+Source0  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.39.0.tar.gz
+Source1 : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.39.0.tar.gz.asc
 Summary  : An SDK for building applications to work with OpenStack
 Group    : Development/Tools
 License  : Apache-2.0
@@ -95,15 +95,15 @@ python3 components for the openstacksdk package.
 
 
 %prep
-%setup -q -n openstacksdk-0.38.0
-cd %{_builddir}/openstacksdk-0.38.0
+%setup -q -n openstacksdk-0.39.0
+cd %{_builddir}/openstacksdk-0.39.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1575384765
+export SOURCE_DATE_EPOCH=1575996676
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
@@ -120,7 +120,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/openstacksdk
-cp %{_builddir}/openstacksdk-0.38.0/LICENSE %{buildroot}/usr/share/package-licenses/openstacksdk/57aed0b0f74e63f6b85cce11bce29ba1710b422b
+cp %{_builddir}/openstacksdk-0.39.0/LICENSE %{buildroot}/usr/share/package-licenses/openstacksdk/57aed0b0f74e63f6b85cce11bce29ba1710b422b
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
