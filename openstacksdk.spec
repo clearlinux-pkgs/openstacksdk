@@ -6,7 +6,7 @@
 #
 Name     : openstacksdk
 Version  : 0.39.0
-Release  : 62
+Release  : 63
 URL      : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.39.0.tar.gz
 Source0  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.39.0.tar.gz
 Source1 : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.39.0.tar.gz.asc
