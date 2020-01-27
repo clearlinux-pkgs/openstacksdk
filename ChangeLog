@@ -1,6 +1,26 @@
 CHANGES
 =======
 
+0.40.0
+------
+
+* Use the bifrost bionic CI job
+* "qos\_network\_policy\_id" attribute added to port resource
+* Replace six.iteritems() with .items()
+* Bump min version of decorator
+* Fix bug in object storage container creation setting metadata
+* Add reset\_interfaces argument to patch\_node
+* Fix duplicated words issue like "was not not found"
+* Handle HTTP errors in add/remove router interface calls
+* Add return cluster\_id when query actions list
+* Support uploading image from data and stdin
+* Switch stable ansible job to 2.8
+* Remove extra python2 test jobs
+* Stop supporting python2
+* Remove python2 from project-template
+* Add dns\_publish\_fixed\_ip attribute to subnets
+* Remove duplicate job definition
+
 0.39.0
 ------
 
