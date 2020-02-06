@@ -1,10 +1,18 @@
 CHANGES
 =======
 
+0.41.0
+------
+
+* Fix error handling in network trunks operations
+* Fix error handling on add/remove router iface calls
+* Fail a job for ansible modules with message
+
 0.40.0
 ------
 
 * Use the bifrost bionic CI job
+* Add allowed\_cidrs param to load balancer listener
 * "qos\_network\_policy\_id" attribute added to port resource
 * Replace six.iteritems() with .items()
 * Bump min version of decorator
