@@ -1,9 +1,28 @@
 CHANGES
 =======
 
+0.42.0
+------
+
+* Normalise create\_coe\_cluster{,\_template} results
+* Fix service\_type test for magnum in gate
+* Handle old status-less placement service
+* Return uuid alias for coe\_cluster in non strict mode
+* Replace assertItemsEqual with assertCountEqual
+* Add port property: ip\_allocation
+* Include "fields" to "SecurityGroup" query parameters
+* Include user\_id attribute in volume information
+* Add availability\_zone param to load balancer
+* Implement If-Match support for Neutron resources
+* Fix: Set image name correctly if filename is not passed
+* Add bulk port create
+* Add method for bulk creating objects
+* Change of auth url and regions
+
 0.41.0
 ------
 
+* Adding basic implementation for Accelerator(Cyborg)
 * Fix error handling in network trunks operations
 * Fix error handling on add/remove router iface calls
 * Fail a job for ansible modules with message
