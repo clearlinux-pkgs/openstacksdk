@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+0.43.0
+------
+
+* Support for stateless security groups
+* Consistent normalization of Machine objects in the cloud layer
+* Fix aggregate functional test for id restriction
+* Extract check temp\_url\_key logic
+* Add retired and retired\_reason fields to baremetal node
+
 0.42.0
 ------
 
