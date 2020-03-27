@@ -1,9 +1,15 @@
 CHANGES
 =======
 
+0.45.0
+------
+
+* Revert "Switch to futurist for concurrency"
+
 0.44.0
 ------
 
+* [tests] Improve devstack/post playbook efficiency
 * Add Release notes entry for Identity v3 IDP, Mapping and Protocol
 * Add support for Federation Protocols
 * Update Rackspace vendor profile for cinder v2
