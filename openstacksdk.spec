@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x4F398DEAE440091C (infra-root@openstack.org)
 #
 Name     : openstacksdk
-Version  : 0.43.0
-Release  : 68
-URL      : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.43.0.tar.gz
-Source0  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.43.0.tar.gz
-Source1  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.43.0.tar.gz.asc
+Version  : 0.44.0
+Release  : 69
+URL      : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.44.0.tar.gz
+Source0  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.44.0.tar.gz
+Source1  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.44.0.tar.gz.asc
 Summary  : An SDK for building applications to work with OpenStack
 Group    : Development/Tools
 License  : Apache-2.0
@@ -22,6 +22,7 @@ Requires: appdirs
 Requires: cryptography
 Requires: decorator
 Requires: dogpile.cache
+Requires: futurist
 Requires: ipaddress
 Requires: iso8601
 Requires: jmespath
@@ -39,6 +40,7 @@ BuildRequires : buildreq-distutils3
 BuildRequires : cryptography
 BuildRequires : decorator
 BuildRequires : dogpile.cache
+BuildRequires : futurist
 BuildRequires : ipaddress
 BuildRequires : iso8601
 BuildRequires : jmespath
@@ -94,6 +96,7 @@ Requires: pypi(appdirs)
 Requires: pypi(cryptography)
 Requires: pypi(decorator)
 Requires: pypi(dogpile.cache)
+Requires: pypi(futurist)
 Requires: pypi(iso8601)
 Requires: pypi(jmespath)
 Requires: pypi(jsonpatch)
@@ -111,15 +114,15 @@ python3 components for the openstacksdk package.
 
 
 %prep
-%setup -q -n openstacksdk-0.43.0
-cd %{_builddir}/openstacksdk-0.43.0
+%setup -q -n openstacksdk-0.44.0
+cd %{_builddir}/openstacksdk-0.44.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583942078
+export SOURCE_DATE_EPOCH=1585267235
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
@@ -136,7 +139,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/openstacksdk
-cp %{_builddir}/openstacksdk-0.43.0/LICENSE %{buildroot}/usr/share/package-licenses/openstacksdk/57aed0b0f74e63f6b85cce11bce29ba1710b422b
+cp %{_builddir}/openstacksdk-0.44.0/LICENSE %{buildroot}/usr/share/package-licenses/openstacksdk/57aed0b0f74e63f6b85cce11bce29ba1710b422b
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :

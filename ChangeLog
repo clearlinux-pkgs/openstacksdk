@@ -1,6 +1,27 @@
 CHANGES
 =======
 
+0.44.0
+------
+
+* Add Release notes entry for Identity v3 IDP, Mapping and Protocol
+* Add support for Federation Protocols
+* Update Rackspace vendor profile for cinder v2
+* Add support for Identity Providers
+* Lay a foundation for the project cleanup
+* Add support for not including the ID in creation requests
+* Run fetch-subunit-output role conditionally
+* Add bulk creation of rules for Security Group
+* Add support for federation mappings
+* Add Octavia quota to the SDK docs
+* Import generate\_temp\_url from swiftclient
+* Set max\_microversion to 2.53 for hypervisors
+* baremetal: fail-less mode for wait\_for\_nodes\_provision\_state
+* Rationalize examples and functional extra config loading
+* Fix microversion negotiation in some bare metal node call
+* Set min version to test node retirement
+* Add support for additional volume backup options
+
 0.43.0
 ------
 
@@ -15,10 +36,12 @@ CHANGES
 
 * Normalise create\_coe\_cluster{,\_template} results
 * Fix service\_type test for magnum in gate
+* Switch to futurist for concurrency
 * Handle old status-less placement service
 * Return uuid alias for coe\_cluster in non strict mode
 * Replace assertItemsEqual with assertCountEqual
 * Add port property: ip\_allocation
+* Add description field to portforwarding NAT rules
 * Include "fields" to "SecurityGroup" query parameters
 * Include user\_id attribute in volume information
 * Add availability\_zone param to load balancer
@@ -84,6 +107,7 @@ CHANGES
 * Re-add functional tests on flavor content
 * Add support for Node tainted field
 * Add clustering update\_action
+* Fixes get\_user when identity responses are paged
 * Bump the openstackdocstheme extension to 1.20
 * Fix server for later microversion
 * Start supporting type info
