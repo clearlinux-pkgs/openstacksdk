@@ -1,6 +1,21 @@
 CHANGES
 =======
 
+0.46.0
+------
+
+* Volume.backup API attr name fixes
+* Update to hacking 3.0
+* Update local hacking checks
+* Raise hacking to 2.x
+* Re-add nodepool functional test
+* Add availability zone and availability zone profile resources to load balancer
+* Small cleanups after Python2 drop
+* Turn off test log capture for now
+* Add python-requires entry indicating 3.5 is required
+* Remove kwargs validation for identity project updates
+* Change default image type in the OTC vendor profile
+
 0.45.0
 ------
 
@@ -9,6 +24,7 @@ CHANGES
 0.44.0
 ------
 
+* Add unit test for rackspace block-storage workaround
 * [tests] Improve devstack/post playbook efficiency
 * Add Release notes entry for Identity v3 IDP, Mapping and Protocol
 * Add support for Federation Protocols
@@ -125,6 +141,7 @@ CHANGES
 * Make the bifrost job non-voting
 * Update the constraints url
 * Update master for stable/train
+* Fix the wrong doc use oslo\_conf param
 * fix "How To Contribute" url
 
 0.36.0
@@ -188,6 +205,7 @@ CHANGES
 ------
 
 * Add node traits support to baremetal
+* Added missing {user, project}\_domain\_name in Api
 * Volume.Backup restore fixes
 * Fix image deletion with tasks\_api enabled
 * docs: Add simplified CLI parser docs
