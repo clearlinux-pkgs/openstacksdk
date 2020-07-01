@@ -1,6 +1,54 @@
 CHANGES
 =======
 
+0.48.0
+------
+
+* Remove enforcer
+* Add support for multiple image stores
+* Upload image via interop import if needed
+* Don't use random.SystemRandom in tests
+* Drop python3.5 support
+* Remove neutron-fwaas from the jobs' required project
+* baremetal: support for volume connectors API
+* Add query parameter 'id' for security\_groups
+
+0.47.0
+------
+
+* NIT: Fix application credential
+* Add user\_projects method to docs index
+* Do not clean keypairs in the project cleanup
+* Wait for the project cleanup to complete
+* Make optional name and admin password
+* Add some unit tests for config.loader
+* Fix AttributeError exception during authorization
+* baremetal: use proxy methods in unregister\_machine
+* Fix deleting stacks by id when waiting for result
+* Refresh python versions
+* Switch to newer openstackdocstheme and reno versions
+* Extend statistics reporting
+* add default user and project domain for OVH provider
+* new ovh-us provider for OVH US regions
+* added new regions for provider OVH
+* Fix issues found by latest flake8
+* Set BaseImageProxy.create\_image validate\_checksum default to False
+* Stop subclassing object
+* Remove use of six
+* Remove uses of from six.moves
+* Remove some unneeded things from test-requirements
+* Fix image owner field
+* Strip self from incoming glance properties
+* Add name query filter to keystone service
+* Don't error if clouds.yaml is not readable
+* Fix metric names in the object\_store
+* Add "id" to Port's query parameters
+*  Add cipher list support for octavia
+* Update docs to work with newer Sphinx
+* Fix an unstable bare metal unit test
+* OpenStack port decorator variables
+* Update master for stable/ussuri
+
 0.46.0
 ------
 
@@ -29,6 +77,7 @@ CHANGES
 * Add Release notes entry for Identity v3 IDP, Mapping and Protocol
 * Add support for Federation Protocols
 * Update Rackspace vendor profile for cinder v2
+* Add ansible stable-2.9 job and run 2.8 and 2.9
 * Add support for Identity Providers
 * Lay a foundation for the project cleanup
 * Add support for not including the ID in creation requests
