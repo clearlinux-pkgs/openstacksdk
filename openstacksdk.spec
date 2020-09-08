@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xC12B8E73B30F2FC8 (infra-root@openstack.org)
 #
 Name     : openstacksdk
-Version  : 0.48.0
-Release  : 72
-URL      : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.48.0.tar.gz
-Source0  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.48.0.tar.gz
-Source1  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.48.0.tar.gz.asc
+Version  : 0.49.0
+Release  : 73
+URL      : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.49.0.tar.gz
+Source0  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.49.0.tar.gz
+Source1  : https://tarballs.openstack.org/openstacksdk/openstacksdk-0.49.0.tar.gz.asc
 Summary  : An SDK for building applications to work with OpenStack
 Group    : Development/Tools
 License  : Apache-2.0
@@ -22,6 +22,7 @@ Requires: appdirs
 Requires: cryptography
 Requires: decorator
 Requires: dogpile.cache
+Requires: importlib_metadata
 Requires: iso8601
 Requires: jmespath
 Requires: jsonpatch
@@ -116,15 +117,15 @@ python3 components for the openstacksdk package.
 
 
 %prep
-%setup -q -n openstacksdk-0.48.0
-cd %{_builddir}/openstacksdk-0.48.0
+%setup -q -n openstacksdk-0.49.0
+cd %{_builddir}/openstacksdk-0.49.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1593637569
+export SOURCE_DATE_EPOCH=1599602673
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -140,7 +141,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/openstacksdk
-cp %{_builddir}/openstacksdk-0.48.0/LICENSE %{buildroot}/usr/share/package-licenses/openstacksdk/57aed0b0f74e63f6b85cce11bce29ba1710b422b
+cp %{_builddir}/openstacksdk-0.49.0/LICENSE %{buildroot}/usr/share/package-licenses/openstacksdk/57aed0b0f74e63f6b85cce11bce29ba1710b422b
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :

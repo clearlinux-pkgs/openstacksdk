@@ -1,6 +1,23 @@
 CHANGES
 =======
 
+0.49.0
+------
+
+* Update config to Keystone v3
+* Add support for filters into the project cleanup
+* Stop falling back to image import
+* Add "numa\_affinity\_policy" attribute to "port"
+* baremetal-introspection: allow fetching unprocessed data
+* Add compute microversion 2.6 and 2.8
+* Use unittest.mock instead of mock
+* Functional tests to explicitly use ML2/OVS
+* Add block\_storage find functions
+* Allow passing in a logging handler
+* Tolerate images created with other means
+* switch to importlib.metadata for entrypoint loading
+* Ignore IPv6 addresses if force\_ipv4 is set
+
 0.48.0
 ------
 
@@ -31,6 +48,7 @@ CHANGES
 * add default user and project domain for OVH provider
 * new ovh-us provider for OVH US regions
 * added new regions for provider OVH
+* Add TLS protocol support for Octavia
 * Fix issues found by latest flake8
 * Set BaseImageProxy.create\_image validate\_checksum default to False
 * Stop subclassing object
