@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+0.50.0
+------
+
+* Fix l-c testing for ubuntu focal
+* Fix a bogus error in config loader when using several args with dashes
+* Update TOX\_CONSTRAINTS\_FILE for stable/victoria
+* Update .gitreview for stable/victoria
+
 0.49.0
 ------
 
